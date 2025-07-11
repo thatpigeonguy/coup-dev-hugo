@@ -1,0 +1,24 @@
+# data/homepage.yml
+# This file controls the content boxes on your homepage.
+
+- title: "About Me"
+  content: "Hey there! I'm a (mostly) self-taught developer who loves creating (and breaking) things. When I'm not coding, you can find me talking on the radio or reading."
+  link_text: "Read more"
+  link_url: "/about/" # Link to your about page
+
+- title: "Now"
+  content: "Currently in my senior year of high school, will be going to university in September."
+  link_text: "Read more"
+  link_url: "/now/" # Link to your now page
+  meta: "Last updated 2025-01-09" # Optional meta text
+
+- title: "Blog"
+  content: "My ramblings about anything from the latest news to my recent projects. Anything is possible!"
+  # The link for the most recent post will be generated automatically by the theme.
+  link_text: "See all"
+  link_url: "/posts/" # Link to your blog list page
+
+- title: "Contact Me!"
+  content: "The only method to contact me I publicly offer currently is via email:"
+  link_text: "jonah@thecoup.xyz"
+  link_url: "mailto:jonah@thecoup.xyz"

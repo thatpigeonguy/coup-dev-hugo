@@ -1,0 +1,21 @@
+- title: "About Me"
+  content: "Hey there! I'm a (mostly) self-taught developer who loves creating (and breaking) things. When I'm not coding, you can find me talking on the radio or reading."
+  link_text: "Read more"
+  link_url: "/about/"
+
+- title: "Now"
+  title_url: "https://nownownow.com/about/"
+  content: "Currently in my senior year of high school, will be going to university in September."
+  link_text: "Read more"
+  link_url: "/now/"
+  meta: "Last updated 2025-01-09"
+
+- title: "Blog"
+  content: "My ramblings about anything from the latest news to my recent projects. Anything is possible!"
+  link_text: "See all"
+  link_url: "/posts/"
+
+- title: "Contact Me!"
+  content: "The only method to contact me I publicly offer currently is via email:"
+  # Note the use of markdown for the code block
+  contact_line: "`jonah@thecoup.xyz`. [Quick Link for your convinience!](mailto:jonah@thecoup.xyz)"

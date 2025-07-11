@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="essay-container">
+  <header class="essay-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  <!-- This block checks for and renders your new "intro" paragraph -->
+  {{ if .Params.intro }}
+  <div class="essay-intro main-text">
+    <p>{{ .Params.intro | markdownify }}</p>
+  </div>
+  {{ end }}
+  
+
+  <!-- The main content is the ONLY thing inside the .post box -->
+  <article class="post">
+    <div class="main-text">{{ .Content }}</div>
+  </article>
+</div>
+{{ end }}

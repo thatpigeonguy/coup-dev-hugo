@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header">
+    <h1>{{ .Params.header | default .Title }}</h1>
+    <div class="post-metadata">
+      <span>{{ .Date.Format "2006-01-02" }}</span>
+      <!-- This block checks for tags and displays them -->
+      {{ if .Params.tags }}
+      <span>&middot;</span>
+      <ul class="post-tags">
+        {{ range .Params.tags }}
+        <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </header>
+  <div class="main-text">{{ .Content }}</div>
+</article>
+{{ end }}

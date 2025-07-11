@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div class="homepage-intro">
+  <h1>Hi! I'm Jonah</h1>
+  <hr style="border-color: #444" />
+  <p class="main-text">
+    Welcome to <strong>TheCoup</strong>! Please, make yourself comfortable. This
+    is just a little slice of the internet I decided to occupy to build a space
+    of my own, away from the corporate shills and social norms of traditional
+    social media.
+  </p>
+</div>
+
+<!-- This container will hold the single column of boxes -->
+<div class="homepage-container">
+  <!-- Loop through the boxes defined in data/homepage.yml -->
+  {{ range .Site.Data.homepage }}
+  <!-- Each box now uses the .homepage-item class for correct styling -->
+  <div class="homepage-item">
+    {{ if .title_url }}
+    <a href="{{ .title_url }}"><h3>{{ .title }}</h3></a>
+    {{ else }}
+    <h3>{{ .title }}</h3>
+    {{ end }}
+
+    <p class="main-text">{{ .content }}</p>
+
+    {{ if eq .title "Blog" }}
+    <p class="main-text">
+      Most recent post:
+      {{ range first 1 (where $.Site.RegularPages "Section" "posts") }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </p>
+    {{ end }} {{ if .link_text }}
+    <p><a href="{{ .link_url | relURL }}">{{ .link_text }}</a></p>
+    {{ end }} {{ if .contact_line }}
+    <p class="main-text">{{ .contact_line | markdownify }}</p>
+    {{ end }} {{ if .meta }}
+    <p style="font-size: 12px">{{ .meta }}</p>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+
+<!-- Add a new CSS class for the intro text -->
+<style>
+  .homepage-intro {
+    margin-bottom: 2rem;
+  }
+
+  
+</style>
+{{ end }}

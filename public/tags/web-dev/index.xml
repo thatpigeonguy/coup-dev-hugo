@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web-Dev on TheCoup.xyz</title>
+    <link>http://localhost:1313/tags/web-dev/</link>
+    <description>Recent content in Web-Dev on TheCoup.xyz</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jul 2025 18:01:54 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/web-dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HUGO Migration</title>
+      <link>http://localhost:1313/posts/hugo-migration/</link>
+      <pubDate>Fri, 11 Jul 2025 18:01:54 -0400</pubDate>
+      <guid>http://localhost:1313/posts/hugo-migration/</guid>
+      <description>&lt;p&gt;Alright, a bit of an update.&lt;/p&gt;&#xA;&lt;p&gt;This site has officially been migrated to HUGO&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why I Dont Use Web Frameworks</title>
+      <link>http://localhost:1313/posts/why-i-dont-use-web-frameworks/</link>
+      <pubDate>Wed, 25 Sep 2024 16:50:48 -0400</pubDate>
+      <guid>http://localhost:1313/posts/why-i-dont-use-web-frameworks/</guid>
+      <description>&lt;p&gt;Your content goes here.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

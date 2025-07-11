@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="post-header">
+  <!-- This will display a title like: "Posts tagged with “Linux”" -->
+  <h1>Posts tagged with “{{ .Title }}”</h1>
+</div>
+
+<div class="post-container">
+  <!-- 
+    On a taxonomy page, the magic variable `.Pages` already contains
+    the correct list of all pages associated with this term.
+    It's much simpler than the query on the list page!
+  -->
+  {{ range .Pages }}
+  <!-- We can reuse the exact same post-preview partial from our list page -->
+  <div class="post-preview">
+    <a href="{{ .Permalink }}">
+      <h2>{{ .Title }}</h2>
+    </a>
+    <div class="post-metadata">
+      <span>{{ .Date.Format "January 2, 2006" }}</span>
+      {{ if .Params.tags }}
+      <span>&middot;</span>
+      <ul class="post-tags">
+        {{ range .Params.tags }}
+        <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+    <p>{{ .Summary }}</p>
+  </div>
+  {{ else }}
+  <!-- This message will show if a tag somehow has no posts -->
+  <p>No posts found with this tag.</p>
+  {{ end }}
+</div>
+{{ end }}

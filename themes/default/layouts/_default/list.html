@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="post-header">
+  <!-- This uses the section's title, defined in content/posts/_index.md -->
+  <h1 style="font-size: 1.7rem;">Welcome to the blog!</h1>
+  <p>Here, you can find my ramblings about anything from the latest tech news to my recent projects. Anything is possible!</p>
+  <div class="warning" style="margin-top: 20px;">
+    <p>Any post marked with a ⚠️ contains out-of-date information and should be read accordingly.</p>
+  </div>
+  <hr>
+  
+</div>
+
+<div class="post-container">
+  {{ $pages := where .Site.RegularPages "Section" .Section }} {{ range $pages }}
+  <div class="post-preview">
+    <a href="{{ .Permalink }}">
+      <h2>{{ .Title }}</h2>
+    </a>
+    <!-- This is the new, corrected metadata block -->
+    <div class="post-metadata">
+      <span>{{ .Date.Format "2006-01-06" }}</span>
+      {{ if .Params.tags }}
+      <span>&middot;</span>
+      <ul class="post-tags">
+        {{ range .Params.tags }}
+        <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+    <p>{{ .Summary }}</p>
+  </div>
+  {{ else }}
+  <p>No posts found in this section.</p>
+  {{ end }}
+</div>
+{{ end }}

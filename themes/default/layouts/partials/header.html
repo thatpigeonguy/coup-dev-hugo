@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="logo-container">
+    <a href="{{ .Site.BaseURL }}">
+      <h1>THECOUP.XYZ</h1>
+    </a>
+  </div>
+  <div class="nav-container">
+    <nav>
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

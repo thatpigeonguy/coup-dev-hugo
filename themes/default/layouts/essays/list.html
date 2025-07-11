@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="post-header">
+  <!-- This uses the section's title, defined in content/posts/_index.md -->
+  <h1>Essays and Articles</h1>
+  <p>Here you will find some of my more serious works, including school essays I'm particularly proud of or just any serious publication.</p>
+  <hr>
+</div>
+
+<div class="post-container">
+  {{ $pages := where .Site.RegularPages "Section" .Section }} {{ range $pages }}
+  <div class="post-preview">
+    <a href="{{ .Permalink }}">
+      <h2>{{ .Title }}</h2>
+    </a>
+    <!-- This is the new, corrected metadata block -->
+    <div class="post-metadata">
+      <span>{{ .Date.Format "2006-01-02" }}</span>
+      {{ if .Params.tags }}
+      <span>&middot;</span>
+      <ul class="post-tags">
+        {{ range .Params.tags }}
+        <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+    <p>
+      {{ $introText := .Params.intro }}
+      {{ if strings.Contains $introText "<!--more-->" }}
+        {{/* If '<!--more-->' exists, take the part before it */}}
+        {{ $introText = index (split $introText "<!--more-->") 0 }}
+      {{ end }}
+      {{/* Render the (potentially truncated) string as Markdown */}}
+      {{ $introText | markdownify }}
+    </p>
+  </div>
+  {{ else }}
+  <p>No posts found in this section.</p>
+  {{ end }}
+</div>
+{{ end }}
