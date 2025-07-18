@@ -7,10 +7,10 @@
   link_url: "/about/" # Link to your about page
 
 - title: "Now"
-  content: "Currently in my senior year of high school, will be going to university in September."
+  content: "Currently awaiting the beginning of my university career."
   link_text: "Read more"
   link_url: "/now/" # Link to your now page
-  meta: "Last updated 2025-01-09" # Optional meta text
+  meta: "Last updated 2025-07-16" # Optional meta text
 
 - title: "Blog"
   content: "My ramblings about anything from the latest news to my recent projects. Anything is possible!"
