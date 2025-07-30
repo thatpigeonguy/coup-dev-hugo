@@ -1,10 +1,7 @@
 baseURL = 'https://thecoup.xyz/'
 languageCode = 'en-us'
 title = 'TheCoup.xyz'
-theme = 'default' # The name of your theme folder
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+theme = 'default'
 
 [markup.goldmark.renderer]
   unsafe = true
