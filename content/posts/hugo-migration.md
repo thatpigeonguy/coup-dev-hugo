@@ -7,8 +7,6 @@ tags: ["updates", "web-dev", "technology"]
 
 Hey all! It's been a hot minute, so I thought I'd send out a post to talk about a few updates to the site and some others.
 
-<!--more-->
-
 ## HUGO Migration
 
 This site has officially been migrated to HUGO! If you have no idea what that is, all you need know is it makes managing this site 10x easier. For those unfamiliar, Hugo is what's called a static site generator. Essentially, it takes my content (now being written in Markdown) and my site's design templates, and then automatically builds all the individual HTML files for the entire site. This means I write less code and can focus more on the actual content (something this site deperately needs more of).
