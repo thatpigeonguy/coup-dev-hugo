@@ -31,11 +31,21 @@
       <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end }}
     </p>
-    {{ end }} {{ if .link_text }}
+    {{ end }}
+    
+    {{ if .link_text }}
     <p><a href="{{ .link_url | relURL }}">{{ .link_text }}</a></p>
-    {{ end }} {{ if .contact_line }}
+    {{ end }}
+    
+    {{ if .contact_line }}
     <p class="main-text">{{ .contact_line | markdownify }}</p>
-    {{ end }} {{ if .meta }}
+    {{ end }}
+    
+    {{ if .rss_link_text }}
+    <p><a href="{{ .rss_link_url | relURL }}" target="_blank">{{ .rss_link_text }}</a></p>
+    {{ end }}
+    
+    {{ if .meta }}
     <p style="font-size: 12px">{{ .meta }}</p>
     {{ end }}
   </div>
