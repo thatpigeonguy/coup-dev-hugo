@@ -5,7 +5,11 @@ draft: false
 tags: ["web-dev", "programming", "technology", "rant"]
 ---
 
-I'll just get straight to the point: I don't like web frameworks. In my experience, all they have done is overcomplicate, overcrowd, and generally bloat up projects, usually leading me to find an easier solution using plain-old HTML, CSS, & JavaScript. This led me to an interesting question; why do so many people shill and make it a point to use a web framework for every project, even when it feels unnecessary?
+I'll just get straight to the point: I don't like web frameworks. In my experience, all they have done is overcomplicate, overcrowd, and generally bloat up projects, usually leading me to find an easier solution using plain-old HTML, CSS, & JavaScript.
+
+<!--more-->
+
+This led me to an interesting question; why do so many people shill and make it a point to use a web framework for every project, even when it feels unnecessary?
 
 To tackle this problem we first need to look at the source; what is a web framework, and what was it designed to do? Well, firstly, a web framework is tool or package of tools usually used by a web developer to help them build a website more efficiently. However, the problem here is that 90% of internet sites are not huge megacorporation services like Google, YouTube, Facebook, Twitter, etc, but rather smaller sites like your local church, food pantry, plumber, or blog site; ones that don't require complicated functions like the bigger ones do.
 
