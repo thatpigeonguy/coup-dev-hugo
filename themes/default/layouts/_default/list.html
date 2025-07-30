@@ -28,7 +28,8 @@
       </ul>
       {{ end }}
     </div>
-    <p>{{ .Summary }}</p>
+    {{ $firstParagraph := .Content | replaceRE "(?s)<p>(.*?)</p>.*" "<p>${1}</p>" }}
+    <p>{{ $firstParagraph | safeHTML }}</p>
   </div>
   {{ else }}
   <p>No posts found in this section.</p>

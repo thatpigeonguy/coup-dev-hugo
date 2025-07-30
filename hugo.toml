@@ -4,7 +4,13 @@ title = 'TheCoup.xyz'
 theme = 'default'
 
 [markup.goldmark.renderer]
+  # This allows raw HTML (like <p> tags) to be rendered in the feed.
+  # This is essential for your <description> tag.
   unsafe = true
+
+[markup.goldmark.extensions]
+  # This disables the feature that converts ' to &rsquo; etc.
+  typographer = false
 
 [menu]
   [[menu.main]]
