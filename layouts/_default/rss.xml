@@ -1,0 +1,33 @@
+<rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+>
+  <channel>
+    <title>{{ .Site.Title }}</title>
+    <link>{{ .Site.BaseURL }}</link>
+    <atom:link
+      href="{{ .Permalink }}"
+      rel="self"
+      type="application/rss+xml"
+    />
+    <description>{{ .Site.Params.description | default .Site.Title }}</description>
+    <lastBuildDate>{{ now.Format "2006-01-02 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+
+    {{ with .Site.Language.Lang }}<language>{{ . }}</language>{{ end }}
+
+    {{ range first 15 .Data.Pages }} {{/* You can adjust '15' to the number of posts you want in the feed */}}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .PublishDate.Format "2006-01-02 15:04:05 -0700" | safeHTML }}</pubDate>
+      <guid>{{ .Permalink }}</guid>
+      {{ if .Params.author }}<author>{{ .Params.author }}</author>{{ end }}
+      <description>{{ .Summary | html }}</description>
+      <content:encoded
+        ><![CDATA[{{ .Content | safeHTML }}]]></content:encoded
+      >
+    </item>
+    {{ end }}
+  </channel>
+</rss>
