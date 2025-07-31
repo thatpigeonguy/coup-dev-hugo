@@ -27,7 +27,8 @@
       </ul>
       {{ end }}
     </div>
-    <p>{{ .Summary }}</p>
+    {{ $firstParagraph := .Content | replaceRE "(?s)<p>(.*?)</p>.*" "<p>${1}</p>" }}
+    <p>{{ $firstParagraph | safeHTML }}</p>
   </div>
   {{ else }}
   <!-- This message will show if a tag somehow has no posts -->
