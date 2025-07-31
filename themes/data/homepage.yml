@@ -19,5 +19,4 @@
 
 - title: "Contact Me!"
   content: "The only method to contact me I publicly offer currently is via email:"
-  # Note the use of markdown for the code block
   contact_line: "`jonah@thecoup.xyz`. [Quick Link for your convinience!](mailto:jonah@thecoup.xyz)"
