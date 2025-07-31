@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="post-header">
-  <!-- This uses the section's title, defined in content/posts/_index.md -->
+  <!-- Use the section's title, defined in content/posts/_index.md -->
   <h1 style="font-size: 1.7rem;">Welcome to the blog!</h1>
   <p>Here, you can find my ramblings about anything from the latest tech news to my recent projects. Anything is possible!</p>
   <p>An RSS feed can be found <a href="index.xml">here</a>.</p>
@@ -17,7 +17,6 @@
     <a href="{{ .Permalink }}">
       <h2>{{ .Title }}</h2>
     </a>
-    <!-- This is the new, corrected metadata block -->
     <div class="post-metadata">
       <span>{{ .Date.Format "2006-01-06" }}</span>
       {{ if .Params.tags }}
