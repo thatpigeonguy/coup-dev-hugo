@@ -1,7 +1,7 @@
 ---
 title: "My Thoughts on Free Software"
 date: 2025-08-01T08:37:52-04:00
-draft: true
+draft: false
 tags: ["technology", "software", "philosophy"]
 ---
 
