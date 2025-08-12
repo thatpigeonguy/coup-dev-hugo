@@ -1,5 +1,5 @@
 ---
-title: "YouTube Boycot"
+title: "Boycott YouTube"
 date: 2025-08-08T13:52:33-04:00
 draft: false
 tags: ["technology", "lifestyle"]
