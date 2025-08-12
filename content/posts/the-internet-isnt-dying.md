@@ -1,6 +1,6 @@
 ---
 title: "The Internet Isn't Dying"
-date: 2025-08-08T15:14:57-04:00
+date: 2025-08-11T15:14:57-04:00
 draft: false
 tags: ["technology", "indieweb", "philosophy"]
 ---
