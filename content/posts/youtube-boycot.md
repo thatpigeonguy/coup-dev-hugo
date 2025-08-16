@@ -22,6 +22,8 @@ If you’re in the US, do the same with your House rep and both senators; tell t
 
 Everywhere else, the simplest move is to leave. Delete the app, clear your history, and move your subscriptions to RSS or open platforms like Odysee. Fewer eyeballs mean fewer ad dollars, and that’s a metric the boardroom can’t ignore.
 
+If you *must* watch YouTube (I don't blame you), then I'd recommend trying out [FreeTube](https://freetubeapp.io/), [MPV](https://mpv.io/) (if you're fancy like that), or literally anything that can anonymize your viewing.
+
 So, again I encourage you, on August 13th, join in the fight.
 
 Thank you and 73.
