@@ -26,7 +26,10 @@ Here you can find the equipment I use most often.
     - **PSU**: 700W
     - **Monitor**: Monitor: 27" 1920x1080 Dell Monitor
 - **Laptop**: Lenovo Thinkpad T14 Gen1
-- **Phone**: Samsung Galaxy A13 5G
+    - **CPU**: Intel Core i5-10210U (4 cores, 8 threads) @ 4.200GHz
+    - **RAM**: 16GB (2x8GB) DDR4 @ 3200MHz
+    - **Storage**: 1TB NVME SSD
+- **Phone**: Google Pixel 6a with GrapheneOS
 
 ### Radios
 
