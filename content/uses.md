@@ -4,7 +4,7 @@ draft: false
 type: "page"
 ---
 
-Last updated 2025-07-11
+Last updated 2025-08-25
 
 Here you can find the equipment I use most often.
 
