@@ -1,6 +1,5 @@
 {{ define "main" }}
 <div class="post-header">
-  <!-- Use the section's title, defined in content/posts/_index.md -->
   <h1 style="font-size: 1.7rem;">Welcome to the blog!</h1>
   <p>Here, you can find my ramblings about anything from the latest tech news to my recent projects. Anything is possible!</p>
   <p>An RSS feed can be found <a href="index.xml">here</a>.</p>
@@ -8,11 +7,11 @@
     <p>Any post marked with a ⚠️ contains out-of-date information and should be read accordingly.</p>
   </div>
   <hr>
-  
 </div>
 
 <div class="post-container">
-  {{ $pages := where .Site.RegularPages "Section" .Section }} {{ range $pages }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Section" .Section) }}
+  {{ range $paginator.Pages }}
   <div class="post-preview">
     <a href="{{ .Permalink }}">
       <h2>{{ .Title }}</h2>
@@ -34,5 +33,8 @@
   {{ else }}
   <p>No posts found in this section.</p>
   {{ end }}
+
+  <!-- Pagination links INSIDE the same block so they get the right context -->
+  {{ template "_internal/pagination.html" . }}
 </div>
 {{ end }}

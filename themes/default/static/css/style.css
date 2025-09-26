@@ -218,3 +218,36 @@ a {
 .warning-label {
     font-style: normal !important;
 }
+
+/* --- Pagination overrides --- */
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: .4rem;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.pagination li {
+  margin: 0;
+}
+
+.pagination li a,
+.pagination li span {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.pagination li a:hover,
+.pagination li a:focus {
+  background: rgba(0, 0, 0, .05);
+}
+
+.pagination li.active span {
+  background: var(--link-color, #007acc);
+  color: #fff;
+  border-color: var(--link-color, #007acc);
+}

@@ -38,3 +38,5 @@ theme = 'default'
     name = "Slashes"
     url = "/slashes/"
     weight = 60
+
+paginate = 10

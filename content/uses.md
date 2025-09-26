@@ -4,7 +4,7 @@ draft: false
 type: "page"
 ---
 
-Last updated 2025-07-11
+Last updated 2025-08-25
 
 Here you can find the equipment I use most often.
 
@@ -21,12 +21,15 @@ Here you can find the equipment I use most often.
         - 1TB NVME SSD
         - 512GB NVME SSD
         - 120GB SATA SSD
-        - 1TB external SSD
+        - 1TB external HDD
         - DVD/CD Optical
     - **PSU**: 700W
-    - **Monitor**: Monitor: 27" 1920x1080 Dell Monitor
+    - **Monitor**: 27" 1920x1080 Dell Monitor
 - **Laptop**: Lenovo Thinkpad T14 Gen1
-- **Phone**: Samsung Galaxy A13 5G
+    - **CPU**: Intel Core i5-10210U (4 cores, 8 threads) @ 4.200GHz
+    - **RAM**: 16GB (2x8GB) DDR4 @ 3200MHz
+    - **Storage**: 1TB NVME SSD
+- **Phone**: Google Pixel 6a with GrapheneOS
 
 ### Radios
 
