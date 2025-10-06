@@ -1,5 +1,5 @@
 ---
-title: "Goodbye Smarts TVs"
+title: "Goodbye Smart TVs"
 date: 2025-08-14T13:33:29-04:00
 draft: true
 tags: ["technology", "lifestyle"]
